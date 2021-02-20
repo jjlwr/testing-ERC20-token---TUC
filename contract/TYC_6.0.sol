@@ -1,12 +1,12 @@
 pragma solidity 0.6.6;
 
 // ----------------------------------------------------------------------------
-// 'GGMToken' token contract
+// 'ThankYouCoin' token contract
 //
-// Deployed to : 0xFEB02D9383C49A8373F88e82EbCecB553c1837bf
-// Symbol      : GGM
-// Name        : GGMToken
-// Total supply: 100000000
+// Deployed to : 0x9B6ec55db8Fe03a1455D20105cE0dade44965a81
+// Symbol      : TYC
+// Name        : ThankYouCoin
+// Total supply: 1000000
 // Decimals    : 18
 //
 // Enjoy.
@@ -99,7 +99,7 @@ contract Owned {
 // ERC20 Token, with the addition of symbol, name and decimals and assisted
 // token transfers
 // ----------------------------------------------------------------------------
-contract GGMToken is ERC20Interface, Owned, SafeMath {
+contract ThankYouCoin is ERC20Interface, Owned, SafeMath {
     string public symbol;
     string public  name;
     uint8 public decimals;
@@ -113,12 +113,12 @@ contract GGMToken is ERC20Interface, Owned, SafeMath {
     // Constructor
     // ------------------------------------------------------------------------
     constructor() public {
-        symbol = "CCM";
-        name = "CCMToken";
+        symbol = "TYC";
+        name = "ThankYouCoin";
         decimals = 0;
-        _totalSupply = 100000000;
-        balances[0x4B6408E5De3D348C0cd571E67Aa2dDBDe563AD58] = _totalSupply;
-        emit Transfer(address(0), 0x4B6408E5De3D348C0cd571E67Aa2dDBDe563AD58, _totalSupply);
+        _totalSupply = 1000000;
+        balances[0x9B6ec55db8Fe03a1455D20105cE0dade44965a81] = _totalSupply;
+        emit Transfer(address(0), 0x9B6ec55db8Fe03a1455D20105cE0dade44965a81, _totalSupply);
     }
 
 
